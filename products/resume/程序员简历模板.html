@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>程序员简历模板</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+         color: #1f2430; margin: 0; padding: 32px; background: #f3f4f6; }
+  .page { max-width: 760px; margin: 0 auto; background: #fff; padding: 40px 48px;
+          box-shadow: 0 4px 20px rgba(0,0,0,.08); border-radius: 8px; }
+  h1 { margin: 0; font-size: 28px; }
+  .contact { color: #6b7280; font-size: 14px; margin: 6px 0 18px; }
+  h2 { font-size: 16px; border-left: 4px solid #2f6df6; padding-left: 8px;
+       margin: 24px 0 10px; }
+  .meta { font-size: 14px; line-height: 1.8; }
+  .item { margin-bottom: 12px; }
+  .item .t { font-weight: 600; }
+  .item .s { color: #6b7280; font-size: 13px; }
+  ul { margin: 4px 0; padding-left: 20px; font-size: 14px; line-height: 1.7; }
+  .tags span { display: inline-block; background: #eef3ff; color: #2f6df6;
+               font-size: 12px; padding: 3px 10px; border-radius: 999px; margin: 3px 4px 0 0; }
+  @media print { body { background: #fff; padding: 0; }
+                 .page { box-shadow: none; border-radius: 0; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>你的名字</h1>
+  <div class="contact">电话：138-0000-0000 ｜ 邮箱：you@example.com ｜ 城市：深圳 ｜ GitHub：github.com/yourname</div>
+
+  <h2>求职意向</h2>
+  <div class="meta">C++ / 后端开发工程师（实习 / 校招 / 社招），期望城市：一线城市</div>
+
+  <h2>技能栈</h2>
+  <div class="tags">
+    <span>C++17</span><span>STL</span><span>多线程</span><span>网络编程</span>
+    <span>Linux</span><span>MySQL</span><span>Redis</span><span>CMake</span>
+    <span>Git</span><span>算法与数据结构</span>
+  </div>
+
+  <h2>项目经历</h2>
+  <div class="item">
+    <div class="t">项目一：高并发订单系统</div>
+    <div class="s">2025.03 – 2025.08 ｜ 核心开发</div>
+    <ul>
+      <li>基于 C++ 与 Redis 设计缓存层，QPS 提升 3 倍；</li>
+      <li>使用线程池 + 无锁队列优化吞吐，P99 延迟降低 40%；</li>
+      <li>负责模块单元测试，覆盖率达 85%。</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="t">项目二：轻量级 RPC 框架</div>
+    <div class="s">2024.10 – 2025.01 ｜ 独立开发</div>
+    <ul>
+      <li>实现序列化、服务注册与负载均衡；</li>
+      <li>支持 Protobuf 协议，已在 GitHub 开源（200+ Star）。</li>
+    </ul>
+  </div>
+
+  <h2>教育背景</h2>
+  <div class="item">
+    <div class="t">某某大学 · 计算机科学与技术（本科）</div>
+    <div class="s">2021.09 – 2025.06 ｜ GPA 3.7/4.0 ｜ 二等奖学金</div>
+  </div>
+
+  <h2>其他</h2>
+  <div class="meta">LeetCode 300+ 题；技术博客作者；英语 CET-6。</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>代码截图美化 · 小赚工具箱</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap bar">
+    <div class="brand">代码截图美化 <span>· EarnKit</span></div>
+    <div class="controls">
+      <label>语言
+        <select id="lang">
+          <option value="cpp">C++</option>
+          <option value="python">Python</option>
+          <option value="js">JavaScript</option>
+          <option value="plain">纯文本</option>
+        </select>
+      </label>
+      <label>主题
+        <select id="theme">
+          <option value="dracula">Dracula 暗色</option>
+          <option value="light">Light 浅色</option>
+        </select>
+      </label>
+      <label>字号
+        <select id="size">
+          <option value="14">14</option>
+          <option value="16" selected>16</option>
+          <option value="18">18</option>
+          <option value="20">20</option>
+        </select>
+      </label>
+      <label class="wm"><input type="checkbox" id="watermark"> 品牌水印（引流用）</label>
+      <button id="unlock" class="unlock">解锁高清无水印 ¥9.9</button>
+      <button id="export" class="primary">导出 PNG</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap editor">
+  <section class="left">
+    <div class="hint">在此粘贴代码：</div>
+    <textarea id="code" spellcheck="false">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    // 打印欢迎语
+    cout &lt;&lt; "Hello, EarnKit!" &lt;&lt; endl;
+    return 0;
+}</textarea>
+  </section>
+  <section class="right">
+    <div class="hint">实时预览：</div>
+    <div class="preview">
+      <canvas id="cv"></canvas>
+    </div>
+  </section>
+</main>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

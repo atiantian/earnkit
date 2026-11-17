@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小赚工具箱 EarnKit · 让你的技能自动变现</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="badge">90 天日入 ¥100 计划</div>
+    <h1>小赚工具箱</h1>
+    <p class="sub">程序员也能上手的数字产品 &amp; 工具 —— 一次制作，自动售卖，睡后收入。</p>
+    <a class="cta" href="#products">看看卖什么 →</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="products">
+    <h2>数字产品 · 自动交付</h2>
+    <p class="lead">付款后即时解锁下载，无需人工介入。</p>
+    <div id="product-list" class="grid"></div>
+  </section>
+
+  <section id="delivery">
+    <h2>自动交付怎么运作</h2>
+    <ol class="steps">
+      <li>选择产品，扫码完成支付</li>
+      <li>系统校验后即时解锁下载链接</li>
+      <li>网盘 / 邮件自动发送，链接 24h 有效</li>
+    </ol>
+    <p class="muted">演示版：当前为本地原型，支付二维码为占位，部署时替换为你的微信 / 支付宝收款码即可上线收款。</p>
+  </section>
+
+  <section id="saas">
+    <h2>配套 SaaS 小工具</h2>
+    <p class="lead">代码截图美化 / Markdown 转精美长图，免费引流 + 付费功能。</p>
+    <a class="cta ghost" href="../tools/code2image/index.html">打开工具 →</a>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 小赚工具箱 EarnKit · 内容均为原创 / 合规授权，仅供个人学习使用</p>
+  </div>
+</footer>
+
+<div id="pay-modal" class="modal hidden">
+  <div class="modal-box">
+    <button id="close-modal" class="close" aria-label="关闭">×</button>
+    <h3 id="pay-title"></h3>
+    <p id="pay-price" class="price"></p>
+    <div class="qr-placeholder">[ 你的收款码占位 ]</div>
+    <p class="muted">实际部署时替换为微信 / 支付宝收款码图片</p>
+    <button id="demo-paid" class="cta full">我已完成支付（演示）</button>
+    <a id="download-link" class="download hidden" href="#">⬇ 下载产品</a>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
